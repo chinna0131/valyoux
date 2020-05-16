@@ -1,0 +1,31 @@
+.pricing-wrapper {
+    overflow: hidden;
+    padding: 10px 20px;
+    border-top: 1px solid #bcbcbc;
+    border-bottom: 1px solid #bcbcbc;
+    margin-top: 20px;
+}
+
+.price-details {
+    display: flex;
+    float: left;
+}
+
+.pricing-inner-wrapper img {
+    width: 14px;
+    margin-right: 10px;
+}
+
+.price-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    margin-right: 10px;
+}
+
+.price-count {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 25px;
+    margin-right: 20px;
+}

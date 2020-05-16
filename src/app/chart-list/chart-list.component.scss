@@ -1,0 +1,123 @@
+.search-wrapper {
+    padding: 20px;
+    margin-right: 30px;
+}
+
+.search-title {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.bold {
+    font-size: 16px;
+}
+
+.up-count {
+    border-left: 2px solid #000;
+    margin-left: 20px;
+    font-size: 15px;
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 20px;
+    img {
+        width: 16px;
+        margin: -4px 20px 0 20px;
+    }
+}
+
+.search-wrapper input {
+    width: 300px;
+    border-radius: 3px;
+    border: 1px solid #bcbcbc;
+    height: 40px;
+    padding: 10px 10px;
+}
+
+.chart-list-wrapper table {
+    width: 100%;
+    thead th {
+        background: #000;
+        color: #fff;
+        font-size: 12px;
+        padding: 20px 30px;
+        font-weight: 500;
+    }
+    td {
+        padding: 10px 30px;
+    }
+    tbody tr {
+        border: 1px solid #efeeee;
+        margin-bottom: 20px;
+    }
+}
+
+.artist-img {
+    width: 80px;
+    margin-right: 20px;
+    border-radius: 50%;
+    float: left;
+    img {
+        width: 100%;
+    }
+}
+
+.artist-details {
+    float: left;
+}
+
+.artist-title {
+    display: block;
+    font-weight: bold;
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.album-type {
+    font-size: 11px;
+    float: left;
+    color: #bcbcbc;
+    display: block;
+    width: 100%;
+}
+
+.artist-role {
+    font-size: 11px;
+    color: #8d8d8d;
+    float: left;
+}
+
+.increament-arrow {
+    width: 16px;
+    float: right;
+}
+
+.decreament-arrow {
+    width: 16px;
+    float: right;
+}
+
+.increase {
+    background: #4ad920;
+}
+
+.decrease {
+    background: #ff0093;
+}
+
+.charges {
+    font-size: 14px;
+    color: #fff;
+    padding: 3px 20px 3px 50px;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.table-spacing {
+    height: 20px;
+}
+
+.artist-list tr {
+    border-top: 1px solid #bebbbb;
+    border-bottom: 1px solid #bebbbb;
+}

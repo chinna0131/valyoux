@@ -1,1 +1,102 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$valyoux-primary: mat-palette($mat-indigo);
+$valyoux-accent: mat-palette($mat-pink, A200, A100, A400);
+// The warn palette is optional (defaults to red).
+$valyoux-warn: mat-palette($mat-red);
+// Create the theme object (a Sass map containing all of the palettes).
+$valyoux-theme: mat-light-theme($valyoux-primary, $valyoux-accent, $valyoux-warn);
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($valyoux-theme);
+
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    overflow-x: hidden;
+    font-family: roboto;
+}
+
+
+/*Buttons*/
+
+.pink-button {
+    background: #ff4680;
+    color: #fff;
+    padding: 5px 25px;
+    border: none;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
+.mat-tab-labels {
+    display: flex;
+    margin-top: 20px !important;
+}
+
+.mat-tab-label {
+    border-bottom: 2px solid #bcbcbc;
+}
+
+
+/*Color codes*/
+
+.color-green {
+    color: #4ad920;
+}
+
+.color-pink {
+    color: #ff0093;
+}
+
+.bold {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/*CSS Over Writing*/
+
+ng-marquee {
+    display: block;
+}
+
+mark,
+.mark {
+    padding: 0.2em;
+    background-color: transparent;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar,
+.mat-tab-nav-bar.mat-primary .mat-ink-bar {
+    background-color: #ff0093;
+}
+
+.mat-tab-label-container {
+    display: table !important;
+}
+
+.mat-tab-list {
+    display: table !important;
+    margin: 0 auto !important;
+}
+
+.mat-tab-nav-bar,
+.mat-tab-header {
+    border-bottom: none;
+}
